@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>The Brand</title>
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/theBrandStyle.css">
+    
 </head>
 <body>
 
     <header id="header" class="">
         <div>
-            <!-- Navigation -->
             <nav class="header-container">
                 <ul class="header-bar">
                     <li><a class="header-currency-nav">Currency:
@@ -23,43 +24,72 @@
                         </a>
                     </li>
 
-                    <li class="header-bar-list">
-                        <a> Register </a>
-                        <a style="margin:auto auto auto 20px;"> Sign In </a>
-                        <a class="shopping_bag">
-                            <img src="img/general/shopping_bag.png" alt="bag" style="position:relative;
-                            top: 7px;">
-                            <select class="shopping_bag_text">   
+                    <li class="header-bar-menu">
+                        <a href="#Register">Register </a>
+                        <a href="#SignIn" style="margin:auto auto auto 20px;"> Sign In </a>
+                        <a class="shopping-bag" href="#shoppingBag">
+                            <img src="img/general/shopping_bag.png" alt="">
+                            <select class="shopping-bag-text">   
                                 <option>empty</option>
                             </select>  
                         </a>        
                     </li>
                 </ul>
             </nav>
-        </div> <!-- header-container -->	
-     </header>  <!-- header -->
+        </div>	
+     </header>  
 
     <section>
-        <div>
-            <img class="logo-left" src="img/general/logo.jpg"  alt="logo" style="display:relateive">   
-        <div>
-            <nav role="navigation">                                   
-                <div>
-                    <ul  class="dropdown">
-                        <li><a>MENS</a>
-                        <li><a>WOMENS</a></li>
-                        <li><a class="default-menu-selected" >THE BRAND</a></li>
-                        <li><a>LOCAL STORE</a></li>
-                        <li><a>LOOK BOOK</a></li>
-                        <li id="search_container">
-                                <input type="text" id="input" value="Search">
-                                <img src="img/general/search_icon.jpg" id="search_img">
+        <nav id="dropdown-menu" class="dropdown-menu">
+                <ul>
+                    <li class="dd-sub-menu">
+                        <a href="#MENS">MENS</a>
+                        <div class="dd-sub-menu-inner">  
+                            <div> 
+                                <h1>CASUALS</h1>
+                                <ul>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Polo Shirts</a></li>
+                                    <li><a href="#">Sportswear</a></li>
+                                    <li><a href="#">Trousers & Chinos</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h1>FORMAL</h1>
+                                <ul>                                                
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Suits</a></li>
+                                    <li><a href="#">Trousers</a></li>
+                                </ul>
+                            </div>  
+                            <div class="mens-banner-container">
+                            <div class="mens-banner-add">
+                                <pre>   AUTUMN SALE! 
+
+   UP TO 50% OFF</pre>
+</div>
+                            </div>
+                        </div> 
+                        
+                    </li>
+                    <li><a>WOMENS</a></li>
+                    <li><a class="default-menu-selected">THE BRAND</a></li>
+                    <li><a>LOCAL STORE</a></li>
+                    <li><a>LOOK BOOK</a></li>
+                    <li id="search_container">
+                            <input type="text" id="input" value="Search">
+                            <img src="img/general/search_icon.jpg" id="search_img">
                         </li>
-                    </ul>
+                    </ul>    
+             </nav>
+             <div>
+                    <img class="logo-left" src="img/general/logo.jpg"  alt="">                       
                 </div>
-            </nav>
-        <div>            
-    </section><!-- first section -->
+    </section>
+
 
    <section class="brand-container">
        <div class="brand-title">
@@ -131,64 +161,68 @@
      </div>
 
 
-    <section class="four-section-container">
-        <div id="sitemap">
-            <ul class="sitemap">
-                <ul>INFORMATION
-                        <li>The Brand</li>
-                        <li>Local Stores</li>
-                        <li>Customer Service</li>
-                        <li>Provancy & Cokkies</li>
-                        <li>Site Map</li>
-                        <li>&nbsp;</li>      
+     <section class="info-container">
+            <div class="sitemap">
+                <ul class="sitemap-menu">
+                    <ul>INFORMATION
+                            <li>The Brand</li>
+                            <li>Local Stores</li>
+                            <li>Customer Service</li>
+                            <li>Provancy & Cokkies</li>
+                            <li>Site Map</li>
+                            <li>&nbsp;</li>      
+                    </ul>
+                    <ul>WHY BUY FROM US
+                            <li>Shipping & Returns</li>
+                            <li>Secure Shopping</li>
+                            <li>Testimonials</li>
+                            <li>Award Winning</li>
+                            <li>Ethical trading</li>
+                            <li>&nbsp;</li>
+                    </ul>
+                    <ul>YOUR ACCOUNT
+                            <li>Sing in</li>
+                            <li>Register</li>
+                            <li>View Cart</li>
+                            <li>View your lookbook</li>
+                            <li>Track an order</li>
+                            <li>Update Information</li>
+                    </ul>
+                    <ul>LOOKBOOK
+                            <li>Latest posts</li>
+                            <li>Men's lookbook</li>
+                            <li>Women's lookbook</li>
+                            <li>Lookbook RSS feed</li>
+                            <li>View Your lookbooks</li>
+                            <li>Delete your lookbook</li>
+                    </ul>
+                   <ul>CONTACT DETAILS
+                        <li>Head Office: Avenue Fasion, &#10;&#13;&#10;&#13;&#10;&#13; 180-182 Regent Street London </li>
+                        <li>Telephone: 0123-456-789 &#10;&#13; Email: support@yourwebsite.com</li>
+                   </ul>
                 </ul>
-                <ul>WHY BUY FROM US
-                        <li>Shipping & Returns</li>
-                        <li>Secure Shopping</li>
-                        <li>Testimonials</li>
-                        <li>Award Winning</li>
-                        <li>Ethical trading</li>
-                        <li>&nbsp;</li>
-                </ul>
-                <ul>YOUR ACCOUNT
-                        <li>Sing in</li>
-                        <li>Register</li>
-                        <li>View Cart</li>
-                        <li>View your lookbook</li>
-                        <li>Track an order</li>
-                        <li>Update Information</li>
-                </ul>
-                <ul>LOOKBOOK
-                        <li>Latest posts</li>
-                        <li>Men's lookbook</li>
-                        <li>Women's lookbook</li>
-                        <li>Lookbook RSS feed</li>
-                        <li>View Your lookbooks</li>
-                        <li>Delete your lookbook</li>
-                </li>
-            </ul>
-        </div>
+            
+                <!-- <aside class="contact-into-container">
+                    <div class="contact-into-details">
+                            <p>CONTACT DETAILS</p>
+                            <p>Head Office: Avenue Fasion, &#10;&#13;&#10;&#13;&#10;&#13; 180-182 Regent Street London </p>
+                            <p>Telephone: 0123-456-789 &#10;&#13; Email: support@yourwebsite.com</p>
+                    </div>
+                </aside>   -->
+             </div>     
         
-        <aside class="contact-into-container">
-            <div class="contact-into-details">
-                    <p>CONTACT DETAILS</p>
-                    <p>Head Office: Avenue Fasion, &#10;&#13;&#10;&#13;&#10;&#13; 180-182 Regent Street London </p>
-                    <p>Telephone: 0123-456-789 &#10;&#13; Email: support@yourwebsite.com</p>
+    
+            <div class="container-flex-direction">
+                    <div class="awfa-container">
+                      <span><img class="awfa_img" src="img/general/award winner fashion awards 2016.png"></span>
+                    </div>
+                    <div class="contact-details-container">
+                      <span><img class="contact-icons" src="img/general/contact details icons.png"></span>
+                    </div>
             </div>
-        </aside>    
+    
+        </section> 
 
-
-        <div class="container-flex-direction">
-                <div class="awfa-container">
-                  <span><img class="awfa_img" src="img/general/award winner fashion awards 2016.png"></span>
-                </div>
-                <div class="contact-details-container">
-                  <span><img class="contact-icons" src="img/general/contact details icons.png"></span>
-                </div>
-        </div>
-
-
-    </section>
 
     <!-- footer -->
     <div class="footer">
